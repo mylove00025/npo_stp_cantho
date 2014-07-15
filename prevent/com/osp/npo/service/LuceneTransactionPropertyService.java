@@ -719,6 +719,8 @@ public class LuceneTransactionPropertyService {
 				transactionPropertyInfo.setCancelDescription(document.getField("cancelDescription").stringValue());
 
 				transactionPropertyInfo.setMortageCancelNote(document.getField("mortageCancelNote").stringValue());
+				transactionPropertyInfo.setEntryDateTime(document.getField("entryDate") == null ? null :
+					RelateDateTime.toTimestamp2((document.getField("entryDate").stringValue())));
 
 				TokenStream tokenStream = TokenSources.getAnyTokenStream(searcher.getIndexReader(), scoreId,
 								"transactionContent", new LuceneCustomAnalyzer());
@@ -930,8 +932,8 @@ public class LuceneTransactionPropertyService {
 				transactionPropertyInfo.setCancelDescription(document.getField("cancelDescription").stringValue());
 
 				transactionPropertyInfo.setMortageCancelNote(document.getField("mortageCancelNote").stringValue());
-				transactionPropertyInfo.setEntryDateTime(RelateDateTime.toTimestamp2((document.getField("entryDate")
-								.stringValue())));
+				transactionPropertyInfo.setEntryDateTime(document.getField("entryDate") == null ? null :
+					RelateDateTime.toTimestamp2((document.getField("entryDate").stringValue())));
 
 				TokenStream tokenStream = TokenSources.getAnyTokenStream(searcher.getIndexReader(), scoreId,
 								"transactionContent", new LuceneCustomAnalyzer());

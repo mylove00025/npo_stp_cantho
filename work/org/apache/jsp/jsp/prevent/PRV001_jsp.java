@@ -39,7 +39,6 @@ public final class PRV001_jsp extends org.apache.jasper.runtime.HttpJspBase
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fname_005ffilter_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fhtml_005fform_0026_005fstyleId_005fonsubmit_005faction;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fhtml_005fhidden_0026_005fstyleId_005fproperty_005fname_005fnobody;
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fhtml_005fcheckbox_0026_005fstyleId_005fproperty_005fname_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fhtml_005ftext_0026_005fstyleId_005fstyleClass_005fstyle_005fproperty_005fname_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fhtml_005fimage_0026_005fstyle_005fsrc_005fonclick_005falt_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fhtml_005fselect_0026_005fstyleId_005fproperty_005fonchange_005fname;
@@ -89,7 +88,6 @@ public final class PRV001_jsp extends org.apache.jasper.runtime.HttpJspBase
     _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fname_005ffilter_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fhtml_005fform_0026_005fstyleId_005fonsubmit_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fhtml_005fhidden_0026_005fstyleId_005fproperty_005fname_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
-    _005fjspx_005ftagPool_005fhtml_005fcheckbox_0026_005fstyleId_005fproperty_005fname_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fhtml_005ftext_0026_005fstyleId_005fstyleClass_005fstyle_005fproperty_005fname_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fhtml_005fimage_0026_005fstyle_005fsrc_005fonclick_005falt_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fhtml_005fselect_0026_005fstyleId_005fproperty_005fonchange_005fname = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
@@ -135,7 +133,6 @@ public final class PRV001_jsp extends org.apache.jasper.runtime.HttpJspBase
     _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fname_005ffilter_005fnobody.release();
     _005fjspx_005ftagPool_005fhtml_005fform_0026_005fstyleId_005fonsubmit_005faction.release();
     _005fjspx_005ftagPool_005fhtml_005fhidden_0026_005fstyleId_005fproperty_005fname_005fnobody.release();
-    _005fjspx_005ftagPool_005fhtml_005fcheckbox_0026_005fstyleId_005fproperty_005fname_005fnobody.release();
     _005fjspx_005ftagPool_005fhtml_005ftext_0026_005fstyleId_005fstyleClass_005fstyle_005fproperty_005fname_005fnobody.release();
     _005fjspx_005ftagPool_005fhtml_005fimage_0026_005fstyle_005fsrc_005fonclick_005falt_005fnobody.release();
     _005fjspx_005ftagPool_005fhtml_005fselect_0026_005fstyleId_005fproperty_005fonchange_005fname.release();
@@ -643,15 +640,8 @@ request.setAttribute("ERROR_FIELD", errors.properties());
               out.write("\t\tstyle=\"color: blue; font-weight: normal;\"\r\n");
               out.write("\t\tonclick=\"changeSearch('true')\"> [Tìm kiếm nâng cao] </a>\r\n");
               out.write("\t\r\n");
-              out.write("\t&nbsp;&nbsp;&nbsp;&nbsp;\r\n");
               out.write("\t");
-              if (_jspx_meth_html_005fcheckbox_005f0(_jspx_th_html_005fform_005f0, _jspx_page_context))
-                return;
               out.write("\r\n");
-              out.write("    <label for=\"officeCode\">Chỉ tìm kiếm dữ liệu do ");
-              if (_jspx_meth_bean_005fwrite_005f6(_jspx_th_html_005fform_005f0, _jspx_page_context))
-                return;
-              out.write(" đăng ký</label>\r\n");
               out.write("\t\r\n");
               out.write("    </div>\r\n");
               out.write("\r\n");
@@ -720,13 +710,13 @@ request.setAttribute("ERROR_FIELD", errors.properties());
               out.write("\t\t<li><a id=\"datapreventTab\"\r\n");
               out.write("\t\t\tonclick=\"displayDataPreventList(this);\"> <span> Thông tin\r\n");
               out.write("\t\tngăn chặn (<label>");
-              if (_jspx_meth_bean_005fwrite_005f7(_jspx_th_html_005fform_005f0, _jspx_page_context))
+              if (_jspx_meth_bean_005fwrite_005f6(_jspx_th_html_005fform_005f0, _jspx_page_context))
                 return;
               out.write("</label>) </span> </a></li>\r\n");
               out.write("\t\t<li><a id=\"propertycontractTab\"\r\n");
               out.write("\t\t\tonclick=\"displayPropertyList(this);\" style=\"padding: 0px 20px;\">\r\n");
-              out.write("\t\t<span> Hợp đồng, giao dịch đã công chứng (<label>");
-              if (_jspx_meth_bean_005fwrite_005f8(_jspx_th_html_005fform_005f0, _jspx_page_context))
+              out.write("\t\t<span> Hợp đồng, giao dịch đã công chứng, chứng thực (<label>");
+              if (_jspx_meth_bean_005fwrite_005f7(_jspx_th_html_005fform_005f0, _jspx_page_context))
                 return;
               out.write("</label>) </span> </a></li>\r\n");
               out.write("\t\t<li><span id=\"preventResult\"> <!--\r\n");
@@ -927,7 +917,7 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                           out.write("\t\t\t\t\t\t\t");
 }  
                           out.write(' ');
-                          if (_jspx_meth_bean_005fwrite_005f11(_jspx_th_logic_005fequal_005f5, _jspx_page_context))
+                          if (_jspx_meth_bean_005fwrite_005f10(_jspx_th_logic_005fequal_005f5, _jspx_page_context))
                             return;
                           out.write("\r\n");
                           out.write("\t\t\t\t\t\t\t");
@@ -1022,7 +1012,7 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                           out.write("\t\t\t\t\t\t\t");
 }  
                           out.write(' ');
-                          if (_jspx_meth_bean_005fwrite_005f12(_jspx_th_logic_005fequal_005f6, _jspx_page_context))
+                          if (_jspx_meth_bean_005fwrite_005f11(_jspx_th_logic_005fequal_005f6, _jspx_page_context))
                             return;
                           out.write(' ');
 
@@ -1045,11 +1035,11 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                       _005fjspx_005ftagPool_005flogic_005fequal_0026_005fvalue_005fproperty_005fname.reuse(_jspx_th_logic_005fequal_005f6);
                       out.write("</td>\r\n");
                       out.write("\t\t\t\t\t\t<td>");
-                      if (_jspx_meth_bean_005fwrite_005f13(_jspx_th_logic_005fiterate_005f1, _jspx_page_context))
+                      if (_jspx_meth_bean_005fwrite_005f12(_jspx_th_logic_005fiterate_005f1, _jspx_page_context))
                         return;
                       out.write("</td>\r\n");
                       out.write("\t\t\t\t\t\t<td style=\"text-align: center;\">");
-                      if (_jspx_meth_bean_005fwrite_005f14(_jspx_th_logic_005fiterate_005f1, _jspx_page_context))
+                      if (_jspx_meth_bean_005fwrite_005f13(_jspx_th_logic_005fiterate_005f1, _jspx_page_context))
                         return;
                       out.write("</td>\r\n");
                       out.write("\t\t\t\t\t\t<td style=\"text-align: center;\">");
@@ -1070,7 +1060,7 @@ request.setAttribute("ERROR_FIELD", errors.properties());
  } else { 
                       out.write("\r\n");
                       out.write("\t\t\t\t\t\t\t\t");
-                      if (_jspx_meth_bean_005fwrite_005f15(_jspx_th_logic_005fiterate_005f1, _jspx_page_context))
+                      if (_jspx_meth_bean_005fwrite_005f14(_jspx_th_logic_005fiterate_005f1, _jspx_page_context))
                         return;
                       out.write("\r\n");
                       out.write("\t\t\t\t\t\t\t");
@@ -1146,13 +1136,14 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                   out.write("\r\n");
                   out.write("\t\t<table id=\"propertyList\" class=\"tbl-list\">\r\n");
                   out.write("\t\t\t<tr>\r\n");
-                  out.write("\t\t\t\t<th>Ngày công chứng</th>\r\n");
+                  out.write("\t\t\t\t<th>Ngày CC,CT</th>\r\n");
+                  out.write("\t\t\t\t<th>Ngày đưa lên</th>\r\n");
                   out.write("\t\t\t\t<th>Số hợp đồng</th>\r\n");
                   out.write("\t\t\t\t<th>Tên hợp đồng</th>\r\n");
                   out.write("\t\t\t\t<th>Bên liên quan</th>\r\n");
                   out.write("\t\t\t\t<th>Nội dung</th>\r\n");
-                  out.write("\t\t\t\t<th>Công chứng viên</th>\r\n");
-                  out.write("\t\t\t\t<th>Tổ chức công chứng</th>\r\n");
+                  out.write("\t\t\t\t<th>Người CC,CT</th>\r\n");
+                  out.write("\t\t\t\t<th>Tổ chức CC,CT</th>\r\n");
                   out.write("\t\t\t</tr>\r\n");
                   out.write("\r\n");
                   out.write("\t\t\t<tbody id=\"propertyListContent\">\r\n");
@@ -1161,13 +1152,13 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                   org.apache.struts.taglib.logic.IterateTag _jspx_th_logic_005fiterate_005f2 = (org.apache.struts.taglib.logic.IterateTag) _005fjspx_005ftagPool_005flogic_005fiterate_0026_005fproperty_005fname_005findexId_005fid.get(org.apache.struts.taglib.logic.IterateTag.class);
                   _jspx_th_logic_005fiterate_005f2.setPageContext(_jspx_page_context);
                   _jspx_th_logic_005fiterate_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fnotEmpty_005f1);
-                  // /jsp/prevent/PRV001.jsp(307,4) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /jsp/prevent/PRV001.jsp(308,4) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_logic_005fiterate_005f2.setId("item");
-                  // /jsp/prevent/PRV001.jsp(307,4) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /jsp/prevent/PRV001.jsp(308,4) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_logic_005fiterate_005f2.setName("preventListViewHelper");
-                  // /jsp/prevent/PRV001.jsp(307,4) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /jsp/prevent/PRV001.jsp(308,4) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_logic_005fiterate_005f2.setProperty("transactionPropertyList");
-                  // /jsp/prevent/PRV001.jsp(307,4) name = indexId type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /jsp/prevent/PRV001.jsp(308,4) name = indexId type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_logic_005fiterate_005f2.setIndexId("i");
                   int _jspx_eval_logic_005fiterate_005f2 = _jspx_th_logic_005fiterate_005f2.doStartTag();
                   if (_jspx_eval_logic_005fiterate_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -1186,9 +1177,15 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                       out.print(i % 2);
                       out.write("\">\r\n");
                       out.write("\t\t\t\t\t\t<td nowrap=\"nowrap\" style=\"text-align: center;\">");
-                      if (_jspx_meth_bean_005fwrite_005f18(_jspx_th_logic_005fiterate_005f2, _jspx_page_context))
+                      if (_jspx_meth_bean_005fwrite_005f17(_jspx_th_logic_005fiterate_005f2, _jspx_page_context))
                         return;
                       out.write("</td>\r\n");
+                      out.write("\t\t\t\t\t\t<td nowrap=\"nowrap\" style=\"text-align: center;\">\r\n");
+                      out.write("\t\t\t\t\t\t\t");
+                      if (_jspx_meth_bean_005fwrite_005f18(_jspx_th_logic_005fiterate_005f2, _jspx_page_context))
+                        return;
+                      out.write("\r\n");
+                      out.write("\t\t\t\t\t\t</td>\r\n");
                       out.write("\t\t\t\t\t\t<td>");
                       if (_jspx_meth_bean_005fwrite_005f19(_jspx_th_logic_005fiterate_005f2, _jspx_page_context))
                         return;
@@ -1203,11 +1200,11 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                       org.apache.struts.taglib.logic.EqualTag _jspx_th_logic_005fequal_005f8 = (org.apache.struts.taglib.logic.EqualTag) _005fjspx_005ftagPool_005flogic_005fequal_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.EqualTag.class);
                       _jspx_th_logic_005fequal_005f8.setPageContext(_jspx_page_context);
                       _jspx_th_logic_005fequal_005f8.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-                      // /jsp/prevent/PRV001.jsp(315,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(319,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_logic_005fequal_005f8.setValue("false");
-                      // /jsp/prevent/PRV001.jsp(315,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(319,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_logic_005fequal_005f8.setProperty("luceneSearch");
-                      // /jsp/prevent/PRV001.jsp(315,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(319,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_logic_005fequal_005f8.setName("preventListViewHelper");
                       int _jspx_eval_logic_005fequal_005f8 = _jspx_th_logic_005fequal_005f8.doStartTag();
                       if (_jspx_eval_logic_005fequal_005f8 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -1219,13 +1216,13 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                           org.apache.struts.taglib.bean.DefineTag _jspx_th_bean_005fdefine_005f6 = (org.apache.struts.taglib.bean.DefineTag) _005fjspx_005ftagPool_005fbean_005fdefine_0026_005ftype_005fproperty_005fname_005fid_005fnobody.get(org.apache.struts.taglib.bean.DefineTag.class);
                           _jspx_th_bean_005fdefine_005f6.setPageContext(_jspx_page_context);
                           _jspx_th_bean_005fdefine_005f6.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f8);
-                          // /jsp/prevent/PRV001.jsp(317,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(321,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f6.setId("summaryDisp");
-                          // /jsp/prevent/PRV001.jsp(317,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(321,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f6.setName("item");
-                          // /jsp/prevent/PRV001.jsp(317,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(321,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f6.setProperty("relationObjectSummaryDisp");
-                          // /jsp/prevent/PRV001.jsp(317,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(321,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f6.setType("java.lang.String");
                           int _jspx_eval_bean_005fdefine_005f6 = _jspx_th_bean_005fdefine_005f6.doStartTag();
                           if (_jspx_th_bean_005fdefine_005f6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1241,13 +1238,13 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                           org.apache.struts.taglib.bean.DefineTag _jspx_th_bean_005fdefine_005f7 = (org.apache.struts.taglib.bean.DefineTag) _005fjspx_005ftagPool_005fbean_005fdefine_0026_005ftype_005fproperty_005fname_005fid_005fnobody.get(org.apache.struts.taglib.bean.DefineTag.class);
                           _jspx_th_bean_005fdefine_005f7.setPageContext(_jspx_page_context);
                           _jspx_th_bean_005fdefine_005f7.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f8);
-                          // /jsp/prevent/PRV001.jsp(319,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(323,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f7.setId("disp");
-                          // /jsp/prevent/PRV001.jsp(319,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(323,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f7.setName("item");
-                          // /jsp/prevent/PRV001.jsp(319,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(323,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f7.setProperty("relationObjectDisp");
-                          // /jsp/prevent/PRV001.jsp(319,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(323,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f7.setType("java.lang.String");
                           int _jspx_eval_bean_005fdefine_005f7 = _jspx_th_bean_005fdefine_005f7.doStartTag();
                           if (_jspx_th_bean_005fdefine_005f7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1306,11 +1303,11 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                       org.apache.struts.taglib.logic.EqualTag _jspx_th_logic_005fequal_005f9 = (org.apache.struts.taglib.logic.EqualTag) _005fjspx_005ftagPool_005flogic_005fequal_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.EqualTag.class);
                       _jspx_th_logic_005fequal_005f9.setPageContext(_jspx_page_context);
                       _jspx_th_logic_005fequal_005f9.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-                      // /jsp/prevent/PRV001.jsp(341,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(345,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_logic_005fequal_005f9.setValue("true");
-                      // /jsp/prevent/PRV001.jsp(341,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(345,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_logic_005fequal_005f9.setProperty("luceneSearch");
-                      // /jsp/prevent/PRV001.jsp(341,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(345,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_logic_005fequal_005f9.setName("preventListViewHelper");
                       int _jspx_eval_logic_005fequal_005f9 = _jspx_th_logic_005fequal_005f9.doStartTag();
                       if (_jspx_eval_logic_005fequal_005f9 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -1321,13 +1318,13 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                           org.apache.struts.taglib.bean.DefineTag _jspx_th_bean_005fdefine_005f8 = (org.apache.struts.taglib.bean.DefineTag) _005fjspx_005ftagPool_005fbean_005fdefine_0026_005ftype_005fproperty_005fname_005fid_005fnobody.get(org.apache.struts.taglib.bean.DefineTag.class);
                           _jspx_th_bean_005fdefine_005f8.setPageContext(_jspx_page_context);
                           _jspx_th_bean_005fdefine_005f8.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f9);
-                          // /jsp/prevent/PRV001.jsp(342,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(346,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f8.setId("summaryDisp");
-                          // /jsp/prevent/PRV001.jsp(342,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(346,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f8.setName("item");
-                          // /jsp/prevent/PRV001.jsp(342,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(346,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f8.setProperty("luceneRelationObjectDisp");
-                          // /jsp/prevent/PRV001.jsp(342,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(346,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f8.setType("java.lang.String");
                           int _jspx_eval_bean_005fdefine_005f8 = _jspx_th_bean_005fdefine_005f8.doStartTag();
                           if (_jspx_th_bean_005fdefine_005f8.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1343,13 +1340,13 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                           org.apache.struts.taglib.bean.DefineTag _jspx_th_bean_005fdefine_005f9 = (org.apache.struts.taglib.bean.DefineTag) _005fjspx_005ftagPool_005fbean_005fdefine_0026_005ftype_005fproperty_005fname_005fid_005fnobody.get(org.apache.struts.taglib.bean.DefineTag.class);
                           _jspx_th_bean_005fdefine_005f9.setPageContext(_jspx_page_context);
                           _jspx_th_bean_005fdefine_005f9.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f9);
-                          // /jsp/prevent/PRV001.jsp(344,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(348,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f9.setId("disp");
-                          // /jsp/prevent/PRV001.jsp(344,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(348,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f9.setName("item");
-                          // /jsp/prevent/PRV001.jsp(344,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(348,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f9.setProperty("luceneRelationObject");
-                          // /jsp/prevent/PRV001.jsp(344,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(348,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f9.setType("java.lang.String");
                           int _jspx_eval_bean_005fdefine_005f9 = _jspx_th_bean_005fdefine_005f9.doStartTag();
                           if (_jspx_th_bean_005fdefine_005f9.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1410,11 +1407,11 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                       org.apache.struts.taglib.logic.EqualTag _jspx_th_logic_005fequal_005f10 = (org.apache.struts.taglib.logic.EqualTag) _005fjspx_005ftagPool_005flogic_005fequal_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.EqualTag.class);
                       _jspx_th_logic_005fequal_005f10.setPageContext(_jspx_page_context);
                       _jspx_th_logic_005fequal_005f10.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-                      // /jsp/prevent/PRV001.jsp(368,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(372,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_logic_005fequal_005f10.setValue("false");
-                      // /jsp/prevent/PRV001.jsp(368,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(372,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_logic_005fequal_005f10.setProperty("luceneSearch");
-                      // /jsp/prevent/PRV001.jsp(368,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(372,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_logic_005fequal_005f10.setName("preventListViewHelper");
                       int _jspx_eval_logic_005fequal_005f10 = _jspx_th_logic_005fequal_005f10.doStartTag();
                       if (_jspx_eval_logic_005fequal_005f10 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -1426,13 +1423,13 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                           org.apache.struts.taglib.bean.DefineTag _jspx_th_bean_005fdefine_005f10 = (org.apache.struts.taglib.bean.DefineTag) _005fjspx_005ftagPool_005fbean_005fdefine_0026_005ftype_005fproperty_005fname_005fid_005fnobody.get(org.apache.struts.taglib.bean.DefineTag.class);
                           _jspx_th_bean_005fdefine_005f10.setPageContext(_jspx_page_context);
                           _jspx_th_bean_005fdefine_005f10.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f10);
-                          // /jsp/prevent/PRV001.jsp(370,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(374,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f10.setId("summaryDisp");
-                          // /jsp/prevent/PRV001.jsp(370,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(374,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f10.setName("item");
-                          // /jsp/prevent/PRV001.jsp(370,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(374,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f10.setProperty("transactionContentSummaryDisp");
-                          // /jsp/prevent/PRV001.jsp(370,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(374,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f10.setType("java.lang.String");
                           int _jspx_eval_bean_005fdefine_005f10 = _jspx_th_bean_005fdefine_005f10.doStartTag();
                           if (_jspx_th_bean_005fdefine_005f10.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1448,13 +1445,13 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                           org.apache.struts.taglib.bean.DefineTag _jspx_th_bean_005fdefine_005f11 = (org.apache.struts.taglib.bean.DefineTag) _005fjspx_005ftagPool_005fbean_005fdefine_0026_005ftype_005fproperty_005fname_005fid_005fnobody.get(org.apache.struts.taglib.bean.DefineTag.class);
                           _jspx_th_bean_005fdefine_005f11.setPageContext(_jspx_page_context);
                           _jspx_th_bean_005fdefine_005f11.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f10);
-                          // /jsp/prevent/PRV001.jsp(372,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(376,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f11.setId("disp");
-                          // /jsp/prevent/PRV001.jsp(372,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(376,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f11.setName("item");
-                          // /jsp/prevent/PRV001.jsp(372,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(376,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f11.setProperty("transactionContentDisp");
-                          // /jsp/prevent/PRV001.jsp(372,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(376,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f11.setType("java.lang.String");
                           int _jspx_eval_bean_005fdefine_005f11 = _jspx_th_bean_005fdefine_005f11.doStartTag();
                           if (_jspx_th_bean_005fdefine_005f11.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1516,11 +1513,11 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                       org.apache.struts.taglib.logic.EqualTag _jspx_th_logic_005fequal_005f11 = (org.apache.struts.taglib.logic.EqualTag) _005fjspx_005ftagPool_005flogic_005fequal_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.EqualTag.class);
                       _jspx_th_logic_005fequal_005f11.setPageContext(_jspx_page_context);
                       _jspx_th_logic_005fequal_005f11.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-                      // /jsp/prevent/PRV001.jsp(397,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(401,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_logic_005fequal_005f11.setValue("true");
-                      // /jsp/prevent/PRV001.jsp(397,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(401,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_logic_005fequal_005f11.setProperty("luceneSearch");
-                      // /jsp/prevent/PRV001.jsp(397,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(401,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_logic_005fequal_005f11.setName("preventListViewHelper");
                       int _jspx_eval_logic_005fequal_005f11 = _jspx_th_logic_005fequal_005f11.doStartTag();
                       if (_jspx_eval_logic_005fequal_005f11 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -1532,13 +1529,13 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                           org.apache.struts.taglib.bean.DefineTag _jspx_th_bean_005fdefine_005f12 = (org.apache.struts.taglib.bean.DefineTag) _005fjspx_005ftagPool_005fbean_005fdefine_0026_005ftype_005fproperty_005fname_005fid_005fnobody.get(org.apache.struts.taglib.bean.DefineTag.class);
                           _jspx_th_bean_005fdefine_005f12.setPageContext(_jspx_page_context);
                           _jspx_th_bean_005fdefine_005f12.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f11);
-                          // /jsp/prevent/PRV001.jsp(399,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(403,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f12.setId("summaryDisp");
-                          // /jsp/prevent/PRV001.jsp(399,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(403,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f12.setName("item");
-                          // /jsp/prevent/PRV001.jsp(399,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(403,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f12.setProperty("luceneTransactionContentDisp");
-                          // /jsp/prevent/PRV001.jsp(399,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(403,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f12.setType("java.lang.String");
                           int _jspx_eval_bean_005fdefine_005f12 = _jspx_th_bean_005fdefine_005f12.doStartTag();
                           if (_jspx_th_bean_005fdefine_005f12.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1554,13 +1551,13 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                           org.apache.struts.taglib.bean.DefineTag _jspx_th_bean_005fdefine_005f13 = (org.apache.struts.taglib.bean.DefineTag) _005fjspx_005ftagPool_005fbean_005fdefine_0026_005ftype_005fproperty_005fname_005fid_005fnobody.get(org.apache.struts.taglib.bean.DefineTag.class);
                           _jspx_th_bean_005fdefine_005f13.setPageContext(_jspx_page_context);
                           _jspx_th_bean_005fdefine_005f13.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f11);
-                          // /jsp/prevent/PRV001.jsp(401,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(405,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f13.setId("disp");
-                          // /jsp/prevent/PRV001.jsp(401,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(405,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f13.setName("item");
-                          // /jsp/prevent/PRV001.jsp(401,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(405,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f13.setProperty("luceneTransactionContent");
-                          // /jsp/prevent/PRV001.jsp(401,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                          // /jsp/prevent/PRV001.jsp(405,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                           _jspx_th_bean_005fdefine_005f13.setType("java.lang.String");
                           int _jspx_eval_bean_005fdefine_005f13 = _jspx_th_bean_005fdefine_005f13.doStartTag();
                           if (_jspx_th_bean_005fdefine_005f13.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1636,13 +1633,13 @@ request.setAttribute("ERROR_FIELD", errors.properties());
                       org.apache.struts.taglib.bean.DefineTag _jspx_th_bean_005fdefine_005f14 = (org.apache.struts.taglib.bean.DefineTag) _005fjspx_005ftagPool_005fbean_005fdefine_0026_005ftype_005fproperty_005fname_005fid_005fnobody.get(org.apache.struts.taglib.bean.DefineTag.class);
                       _jspx_th_bean_005fdefine_005f14.setPageContext(_jspx_page_context);
                       _jspx_th_bean_005fdefine_005f14.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-                      // /jsp/prevent/PRV001.jsp(442,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(446,7) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_bean_005fdefine_005f14.setId("officeName");
-                      // /jsp/prevent/PRV001.jsp(442,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(446,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_bean_005fdefine_005f14.setName("item");
-                      // /jsp/prevent/PRV001.jsp(442,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(446,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_bean_005fdefine_005f14.setProperty("notaryOfficeName");
-                      // /jsp/prevent/PRV001.jsp(442,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                      // /jsp/prevent/PRV001.jsp(446,7) name = type type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                       _jspx_th_bean_005fdefine_005f14.setType("java.lang.String");
                       int _jspx_eval_bean_005fdefine_005f14 = _jspx_th_bean_005fdefine_005f14.doStartTag();
                       if (_jspx_th_bean_005fdefine_005f14.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -2067,9 +2064,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
       org.apache.struts.taglib.logic.NotEmptyTag _jspx_th_logic_005fnotEmpty_005f5 = (org.apache.struts.taglib.logic.NotEmptyTag) _005fjspx_005ftagPool_005flogic_005fnotEmpty_0026_005fproperty_005fname.get(org.apache.struts.taglib.logic.NotEmptyTag.class);
       _jspx_th_logic_005fnotEmpty_005f5.setPageContext(_jspx_page_context);
       _jspx_th_logic_005fnotEmpty_005f5.setParent(null);
-      // /jsp/prevent/PRV001.jsp(799,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+      // /jsp/prevent/PRV001.jsp(803,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
       _jspx_th_logic_005fnotEmpty_005f5.setName("preventListViewHelper");
-      // /jsp/prevent/PRV001.jsp(799,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+      // /jsp/prevent/PRV001.jsp(803,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
       _jspx_th_logic_005fnotEmpty_005f5.setProperty("dataPreventList");
       int _jspx_eval_logic_005fnotEmpty_005f5 = _jspx_th_logic_005fnotEmpty_005f5.doStartTag();
       if (_jspx_eval_logic_005fnotEmpty_005f5 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -2081,13 +2078,13 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
           org.apache.struts.taglib.logic.IterateTag _jspx_th_logic_005fiterate_005f3 = (org.apache.struts.taglib.logic.IterateTag) _005fjspx_005ftagPool_005flogic_005fiterate_0026_005fproperty_005fname_005findexId_005fid.get(org.apache.struts.taglib.logic.IterateTag.class);
           _jspx_th_logic_005fiterate_005f3.setPageContext(_jspx_page_context);
           _jspx_th_logic_005fiterate_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fnotEmpty_005f5);
-          // /jsp/prevent/PRV001.jsp(801,1) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+          // /jsp/prevent/PRV001.jsp(805,1) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
           _jspx_th_logic_005fiterate_005f3.setId("item");
-          // /jsp/prevent/PRV001.jsp(801,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+          // /jsp/prevent/PRV001.jsp(805,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
           _jspx_th_logic_005fiterate_005f3.setName("preventListViewHelper");
-          // /jsp/prevent/PRV001.jsp(801,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+          // /jsp/prevent/PRV001.jsp(805,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
           _jspx_th_logic_005fiterate_005f3.setProperty("dataPreventList");
-          // /jsp/prevent/PRV001.jsp(801,1) name = indexId type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+          // /jsp/prevent/PRV001.jsp(805,1) name = indexId type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
           _jspx_th_logic_005fiterate_005f3.setIndexId("i");
           int _jspx_eval_logic_005fiterate_005f3 = _jspx_th_logic_005fiterate_005f3.doStartTag();
           if (_jspx_eval_logic_005fiterate_005f3 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -2108,11 +2105,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
               org.apache.struts.taglib.logic.EqualTag _jspx_th_logic_005fequal_005f16 = (org.apache.struts.taglib.logic.EqualTag) _005fjspx_005ftagPool_005flogic_005fequal_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.EqualTag.class);
               _jspx_th_logic_005fequal_005f16.setPageContext(_jspx_page_context);
               _jspx_th_logic_005fequal_005f16.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f3);
-              // /jsp/prevent/PRV001.jsp(802,1) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(806,1) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f16.setValue("false");
-              // /jsp/prevent/PRV001.jsp(802,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(806,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f16.setName("preventListViewHelper");
-              // /jsp/prevent/PRV001.jsp(802,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(806,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f16.setProperty("luceneSearch");
               int _jspx_eval_logic_005fequal_005f16 = _jspx_th_logic_005fequal_005f16.doStartTag();
               if (_jspx_eval_logic_005fequal_005f16 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -2142,11 +2139,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
               org.apache.struts.taglib.logic.EqualTag _jspx_th_logic_005fequal_005f17 = (org.apache.struts.taglib.logic.EqualTag) _005fjspx_005ftagPool_005flogic_005fequal_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.EqualTag.class);
               _jspx_th_logic_005fequal_005f17.setPageContext(_jspx_page_context);
               _jspx_th_logic_005fequal_005f17.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f3);
-              // /jsp/prevent/PRV001.jsp(805,1) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(809,1) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f17.setValue("true");
-              // /jsp/prevent/PRV001.jsp(805,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(809,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f17.setName("preventListViewHelper");
-              // /jsp/prevent/PRV001.jsp(805,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(809,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f17.setProperty("luceneSearch");
               int _jspx_eval_logic_005fequal_005f17 = _jspx_th_logic_005fequal_005f17.doStartTag();
               if (_jspx_eval_logic_005fequal_005f17 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -2206,9 +2203,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
       org.apache.struts.taglib.logic.NotEmptyTag _jspx_th_logic_005fnotEmpty_005f6 = (org.apache.struts.taglib.logic.NotEmptyTag) _005fjspx_005ftagPool_005flogic_005fnotEmpty_0026_005fproperty_005fname.get(org.apache.struts.taglib.logic.NotEmptyTag.class);
       _jspx_th_logic_005fnotEmpty_005f6.setPageContext(_jspx_page_context);
       _jspx_th_logic_005fnotEmpty_005f6.setParent(null);
-      // /jsp/prevent/PRV001.jsp(811,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+      // /jsp/prevent/PRV001.jsp(815,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
       _jspx_th_logic_005fnotEmpty_005f6.setName("preventListViewHelper");
-      // /jsp/prevent/PRV001.jsp(811,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+      // /jsp/prevent/PRV001.jsp(815,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
       _jspx_th_logic_005fnotEmpty_005f6.setProperty("transactionPropertyList");
       int _jspx_eval_logic_005fnotEmpty_005f6 = _jspx_th_logic_005fnotEmpty_005f6.doStartTag();
       if (_jspx_eval_logic_005fnotEmpty_005f6 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -2220,13 +2217,13 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
           org.apache.struts.taglib.logic.IterateTag _jspx_th_logic_005fiterate_005f4 = (org.apache.struts.taglib.logic.IterateTag) _005fjspx_005ftagPool_005flogic_005fiterate_0026_005fproperty_005fname_005findexId_005fid.get(org.apache.struts.taglib.logic.IterateTag.class);
           _jspx_th_logic_005fiterate_005f4.setPageContext(_jspx_page_context);
           _jspx_th_logic_005fiterate_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fnotEmpty_005f6);
-          // /jsp/prevent/PRV001.jsp(813,1) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+          // /jsp/prevent/PRV001.jsp(817,1) name = id type = java.lang.String reqTime = false required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
           _jspx_th_logic_005fiterate_005f4.setId("item");
-          // /jsp/prevent/PRV001.jsp(813,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+          // /jsp/prevent/PRV001.jsp(817,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
           _jspx_th_logic_005fiterate_005f4.setName("preventListViewHelper");
-          // /jsp/prevent/PRV001.jsp(813,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+          // /jsp/prevent/PRV001.jsp(817,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
           _jspx_th_logic_005fiterate_005f4.setProperty("transactionPropertyList");
-          // /jsp/prevent/PRV001.jsp(813,1) name = indexId type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+          // /jsp/prevent/PRV001.jsp(817,1) name = indexId type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
           _jspx_th_logic_005fiterate_005f4.setIndexId("i");
           int _jspx_eval_logic_005fiterate_005f4 = _jspx_th_logic_005fiterate_005f4.doStartTag();
           if (_jspx_eval_logic_005fiterate_005f4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -2247,11 +2244,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
               org.apache.struts.taglib.logic.EqualTag _jspx_th_logic_005fequal_005f18 = (org.apache.struts.taglib.logic.EqualTag) _005fjspx_005ftagPool_005flogic_005fequal_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.EqualTag.class);
               _jspx_th_logic_005fequal_005f18.setPageContext(_jspx_page_context);
               _jspx_th_logic_005fequal_005f18.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f4);
-              // /jsp/prevent/PRV001.jsp(814,1) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(818,1) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f18.setValue("false");
-              // /jsp/prevent/PRV001.jsp(814,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(818,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f18.setName("preventListViewHelper");
-              // /jsp/prevent/PRV001.jsp(814,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(818,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f18.setProperty("luceneSearch");
               int _jspx_eval_logic_005fequal_005f18 = _jspx_th_logic_005fequal_005f18.doStartTag();
               if (_jspx_eval_logic_005fequal_005f18 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -2287,11 +2284,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
               org.apache.struts.taglib.logic.EqualTag _jspx_th_logic_005fequal_005f19 = (org.apache.struts.taglib.logic.EqualTag) _005fjspx_005ftagPool_005flogic_005fequal_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.EqualTag.class);
               _jspx_th_logic_005fequal_005f19.setPageContext(_jspx_page_context);
               _jspx_th_logic_005fequal_005f19.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f4);
-              // /jsp/prevent/PRV001.jsp(818,1) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(822,1) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f19.setValue("true");
-              // /jsp/prevent/PRV001.jsp(818,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(822,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f19.setName("preventListViewHelper");
-              // /jsp/prevent/PRV001.jsp(818,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(822,1) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f19.setProperty("luceneSearch");
               int _jspx_eval_logic_005fequal_005f19 = _jspx_th_logic_005fequal_005f19.doStartTag();
               if (_jspx_eval_logic_005fequal_005f19 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -2329,9 +2326,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
               org.apache.struts.taglib.logic.NotEmptyTag _jspx_th_logic_005fnotEmpty_005f7 = (org.apache.struts.taglib.logic.NotEmptyTag) _005fjspx_005ftagPool_005flogic_005fnotEmpty_0026_005fproperty_005fname.get(org.apache.struts.taglib.logic.NotEmptyTag.class);
               _jspx_th_logic_005fnotEmpty_005f7.setPageContext(_jspx_page_context);
               _jspx_th_logic_005fnotEmpty_005f7.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f4);
-              // /jsp/prevent/PRV001.jsp(825,4) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(829,4) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fnotEmpty_005f7.setName("item");
-              // /jsp/prevent/PRV001.jsp(825,4) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(829,4) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fnotEmpty_005f7.setProperty("contractPeriod");
               int _jspx_eval_logic_005fnotEmpty_005f7 = _jspx_th_logic_005fnotEmpty_005f7.doStartTag();
               if (_jspx_eval_logic_005fnotEmpty_005f7 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -2361,9 +2358,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
               org.apache.struts.taglib.logic.NotEmptyTag _jspx_th_logic_005fnotEmpty_005f8 = (org.apache.struts.taglib.logic.NotEmptyTag) _005fjspx_005ftagPool_005flogic_005fnotEmpty_0026_005fproperty_005fname.get(org.apache.struts.taglib.logic.NotEmptyTag.class);
               _jspx_th_logic_005fnotEmpty_005f8.setPageContext(_jspx_page_context);
               _jspx_th_logic_005fnotEmpty_005f8.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f4);
-              // /jsp/prevent/PRV001.jsp(829,4) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(833,4) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fnotEmpty_005f8.setName("item");
-              // /jsp/prevent/PRV001.jsp(829,4) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(833,4) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fnotEmpty_005f8.setProperty("cancelDescription");
               int _jspx_eval_logic_005fnotEmpty_005f8 = _jspx_th_logic_005fnotEmpty_005f8.doStartTag();
               if (_jspx_eval_logic_005fnotEmpty_005f8 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -2389,9 +2386,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
               org.apache.struts.taglib.logic.EmptyTag _jspx_th_logic_005fempty_005f2 = (org.apache.struts.taglib.logic.EmptyTag) _005fjspx_005ftagPool_005flogic_005fempty_0026_005fproperty_005fname.get(org.apache.struts.taglib.logic.EmptyTag.class);
               _jspx_th_logic_005fempty_005f2.setPageContext(_jspx_page_context);
               _jspx_th_logic_005fempty_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f4);
-              // /jsp/prevent/PRV001.jsp(832,4) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(836,4) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fempty_005f2.setName("item");
-              // /jsp/prevent/PRV001.jsp(832,4) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(836,4) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fempty_005f2.setProperty("cancelDescription");
               int _jspx_eval_logic_005fempty_005f2 = _jspx_th_logic_005fempty_005f2.doStartTag();
               if (_jspx_eval_logic_005fempty_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -2402,11 +2399,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
                   org.apache.struts.taglib.logic.EqualTag _jspx_th_logic_005fequal_005f20 = (org.apache.struts.taglib.logic.EqualTag) _005fjspx_005ftagPool_005flogic_005fequal_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.EqualTag.class);
                   _jspx_th_logic_005fequal_005f20.setPageContext(_jspx_page_context);
                   _jspx_th_logic_005fequal_005f20.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fempty_005f2);
-                  // /jsp/prevent/PRV001.jsp(833,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /jsp/prevent/PRV001.jsp(837,6) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_logic_005fequal_005f20.setValue("true");
-                  // /jsp/prevent/PRV001.jsp(833,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /jsp/prevent/PRV001.jsp(837,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_logic_005fequal_005f20.setName("item");
-                  // /jsp/prevent/PRV001.jsp(833,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+                  // /jsp/prevent/PRV001.jsp(837,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
                   _jspx_th_logic_005fequal_005f20.setProperty("mortageCancelFlag");
                   int _jspx_eval_logic_005fequal_005f20 = _jspx_th_logic_005fequal_005f20.doStartTag();
                   if (_jspx_eval_logic_005fequal_005f20 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -2444,11 +2441,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
               org.apache.struts.taglib.logic.EqualTag _jspx_th_logic_005fequal_005f21 = (org.apache.struts.taglib.logic.EqualTag) _005fjspx_005ftagPool_005flogic_005fequal_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.EqualTag.class);
               _jspx_th_logic_005fequal_005f21.setPageContext(_jspx_page_context);
               _jspx_th_logic_005fequal_005f21.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f4);
-              // /jsp/prevent/PRV001.jsp(837,3) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(841,3) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f21.setValue("true");
-              // /jsp/prevent/PRV001.jsp(837,3) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(841,3) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f21.setName("item");
-              // /jsp/prevent/PRV001.jsp(837,3) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+              // /jsp/prevent/PRV001.jsp(841,3) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
               _jspx_th_logic_005fequal_005f21.setProperty("mortageCancelFlag");
               int _jspx_eval_logic_005fequal_005f21 = _jspx_th_logic_005fequal_005f21.doStartTag();
               if (_jspx_eval_logic_005fequal_005f21 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -3533,50 +3530,6 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     return false;
   }
 
-  private boolean _jspx_meth_html_005fcheckbox_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_html_005fform_005f0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  html:checkbox
-    org.apache.struts.taglib.html.CheckboxTag _jspx_th_html_005fcheckbox_005f0 = (org.apache.struts.taglib.html.CheckboxTag) _005fjspx_005ftagPool_005fhtml_005fcheckbox_0026_005fstyleId_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.html.CheckboxTag.class);
-    _jspx_th_html_005fcheckbox_005f0.setPageContext(_jspx_page_context);
-    _jspx_th_html_005fcheckbox_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_html_005fform_005f0);
-    // /jsp/prevent/PRV001.jsp(53,1) name = property type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_html_005fcheckbox_005f0.setProperty("officeCode");
-    // /jsp/prevent/PRV001.jsp(53,1) name = styleId type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_html_005fcheckbox_005f0.setStyleId("officeCode");
-    // /jsp/prevent/PRV001.jsp(53,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_html_005fcheckbox_005f0.setName("preventListViewHelper");
-    int _jspx_eval_html_005fcheckbox_005f0 = _jspx_th_html_005fcheckbox_005f0.doStartTag();
-    if (_jspx_th_html_005fcheckbox_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fhtml_005fcheckbox_0026_005fstyleId_005fproperty_005fname_005fnobody.reuse(_jspx_th_html_005fcheckbox_005f0);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fhtml_005fcheckbox_0026_005fstyleId_005fproperty_005fname_005fnobody.reuse(_jspx_th_html_005fcheckbox_005f0);
-    return false;
-  }
-
-  private boolean _jspx_meth_bean_005fwrite_005f6(javax.servlet.jsp.tagext.JspTag _jspx_th_html_005fform_005f0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  bean:write
-    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f6 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
-    _jspx_th_bean_005fwrite_005f6.setPageContext(_jspx_page_context);
-    _jspx_th_bean_005fwrite_005f6.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_html_005fform_005f0);
-    // /jsp/prevent/PRV001.jsp(54,52) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f6.setName("CommonContext");
-    // /jsp/prevent/PRV001.jsp(54,52) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f6.setProperty("notaryOfficeInfo.name");
-    int _jspx_eval_bean_005fwrite_005f6 = _jspx_th_bean_005fwrite_005f6.doStartTag();
-    if (_jspx_th_bean_005fwrite_005f6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f6);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f6);
-    return false;
-  }
-
   private boolean _jspx_meth_html_005ftext_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_html_005fform_005f0, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
@@ -3871,6 +3824,27 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     return false;
   }
 
+  private boolean _jspx_meth_bean_005fwrite_005f6(javax.servlet.jsp.tagext.JspTag _jspx_th_html_005fform_005f0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  bean:write
+    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f6 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
+    _jspx_th_bean_005fwrite_005f6.setPageContext(_jspx_page_context);
+    _jspx_th_bean_005fwrite_005f6.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_html_005fform_005f0);
+    // /jsp/prevent/PRV001.jsp(110,20) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f6.setName("preventListViewHelper");
+    // /jsp/prevent/PRV001.jsp(110,20) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f6.setProperty("totalCount");
+    int _jspx_eval_bean_005fwrite_005f6 = _jspx_th_bean_005fwrite_005f6.doStartTag();
+    if (_jspx_th_bean_005fwrite_005f6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f6);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f6);
+    return false;
+  }
+
   private boolean _jspx_meth_bean_005fwrite_005f7(javax.servlet.jsp.tagext.JspTag _jspx_th_html_005fform_005f0, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
@@ -3879,37 +3853,16 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f7 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f7.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f7.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_html_005fform_005f0);
-    // /jsp/prevent/PRV001.jsp(110,20) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(114,63) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f7.setName("preventListViewHelper");
-    // /jsp/prevent/PRV001.jsp(110,20) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f7.setProperty("totalCount");
+    // /jsp/prevent/PRV001.jsp(114,63) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f7.setProperty("totalCountProperty");
     int _jspx_eval_bean_005fwrite_005f7 = _jspx_th_bean_005fwrite_005f7.doStartTag();
     if (_jspx_th_bean_005fwrite_005f7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f7);
       return true;
     }
     _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f7);
-    return false;
-  }
-
-  private boolean _jspx_meth_bean_005fwrite_005f8(javax.servlet.jsp.tagext.JspTag _jspx_th_html_005fform_005f0, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  bean:write
-    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f8 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
-    _jspx_th_bean_005fwrite_005f8.setPageContext(_jspx_page_context);
-    _jspx_th_bean_005fwrite_005f8.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_html_005fform_005f0);
-    // /jsp/prevent/PRV001.jsp(114,51) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f8.setName("preventListViewHelper");
-    // /jsp/prevent/PRV001.jsp(114,51) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f8.setProperty("totalCountProperty");
-    int _jspx_eval_bean_005fwrite_005f8 = _jspx_th_bean_005fwrite_005f8.doStartTag();
-    if (_jspx_th_bean_005fwrite_005f8.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f8);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f8);
     return false;
   }
 
@@ -3932,7 +3885,7 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
       do {
         out.write("\r\n");
         out.write("                        Có ");
-        if (_jspx_meth_bean_005fwrite_005f9(_jspx_th_logic_005fgreaterThan_005f0, _jspx_page_context))
+        if (_jspx_meth_bean_005fwrite_005f8(_jspx_th_logic_005fgreaterThan_005f0, _jspx_page_context))
           return true;
         out.write(" thông tin ngăn chặn thỏa mãn điều kiện tìm kiếm.\r\n");
         out.write("                    ");
@@ -3949,24 +3902,24 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     return false;
   }
 
-  private boolean _jspx_meth_bean_005fwrite_005f9(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fgreaterThan_005f0, PageContext _jspx_page_context)
+  private boolean _jspx_meth_bean_005fwrite_005f8(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fgreaterThan_005f0, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  bean:write
-    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f9 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
-    _jspx_th_bean_005fwrite_005f9.setPageContext(_jspx_page_context);
-    _jspx_th_bean_005fwrite_005f9.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f0);
+    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f8 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
+    _jspx_th_bean_005fwrite_005f8.setPageContext(_jspx_page_context);
+    _jspx_th_bean_005fwrite_005f8.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f0);
     // /jsp/prevent/PRV001.jsp(118,27) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f9.setName("preventListViewHelper");
+    _jspx_th_bean_005fwrite_005f8.setName("preventListViewHelper");
     // /jsp/prevent/PRV001.jsp(118,27) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f9.setProperty("totalCount");
-    int _jspx_eval_bean_005fwrite_005f9 = _jspx_th_bean_005fwrite_005f9.doStartTag();
-    if (_jspx_th_bean_005fwrite_005f9.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f9);
+    _jspx_th_bean_005fwrite_005f8.setProperty("totalCount");
+    int _jspx_eval_bean_005fwrite_005f8 = _jspx_th_bean_005fwrite_005f8.doStartTag();
+    if (_jspx_th_bean_005fwrite_005f8.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f8);
       return true;
     }
-    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f9);
+    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f8);
     return false;
   }
 
@@ -3989,7 +3942,7 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
       do {
         out.write("\r\n");
         out.write("                        Có ");
-        if (_jspx_meth_bean_005fwrite_005f10(_jspx_th_logic_005fgreaterThan_005f1, _jspx_page_context))
+        if (_jspx_meth_bean_005fwrite_005f9(_jspx_th_logic_005fgreaterThan_005f1, _jspx_page_context))
           return true;
         out.write(" lịch sử giao dịch thỏa mãn điều kiện tìm kiếm.\r\n");
         out.write("                    ");
@@ -4006,24 +3959,24 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     return false;
   }
 
-  private boolean _jspx_meth_bean_005fwrite_005f10(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fgreaterThan_005f1, PageContext _jspx_page_context)
+  private boolean _jspx_meth_bean_005fwrite_005f9(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fgreaterThan_005f1, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  bean:write
-    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f10 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
-    _jspx_th_bean_005fwrite_005f10.setPageContext(_jspx_page_context);
-    _jspx_th_bean_005fwrite_005f10.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f1);
+    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f9 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
+    _jspx_th_bean_005fwrite_005f9.setPageContext(_jspx_page_context);
+    _jspx_th_bean_005fwrite_005f9.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f1);
     // /jsp/prevent/PRV001.jsp(122,27) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f10.setName("preventListViewHelper");
+    _jspx_th_bean_005fwrite_005f9.setName("preventListViewHelper");
     // /jsp/prevent/PRV001.jsp(122,27) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f10.setProperty("totalCountProperty");
-    int _jspx_eval_bean_005fwrite_005f10 = _jspx_th_bean_005fwrite_005f10.doStartTag();
-    if (_jspx_th_bean_005fwrite_005f10.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f10);
+    _jspx_th_bean_005fwrite_005f9.setProperty("totalCountProperty");
+    int _jspx_eval_bean_005fwrite_005f9 = _jspx_th_bean_005fwrite_005f9.doStartTag();
+    if (_jspx_th_bean_005fwrite_005f9.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f9);
       return true;
     }
-    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f10);
+    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f9);
     return false;
   }
 
@@ -4421,19 +4374,42 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     return false;
   }
 
-  private boolean _jspx_meth_bean_005fwrite_005f11(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fequal_005f5, PageContext _jspx_page_context)
+  private boolean _jspx_meth_bean_005fwrite_005f10(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fequal_005f5, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  bean:write
+    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f10 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
+    _jspx_th_bean_005fwrite_005f10.setPageContext(_jspx_page_context);
+    _jspx_th_bean_005fwrite_005f10.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f5);
+    // /jsp/prevent/PRV001.jsp(203,15) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f10.setName("item");
+    // /jsp/prevent/PRV001.jsp(203,15) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f10.setProperty("infoDisp");
+    // /jsp/prevent/PRV001.jsp(203,15) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f10.setFilter(false);
+    int _jspx_eval_bean_005fwrite_005f10 = _jspx_th_bean_005fwrite_005f10.doStartTag();
+    if (_jspx_th_bean_005fwrite_005f10.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.reuse(_jspx_th_bean_005fwrite_005f10);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.reuse(_jspx_th_bean_005fwrite_005f10);
+    return false;
+  }
+
+  private boolean _jspx_meth_bean_005fwrite_005f11(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fequal_005f6, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  bean:write
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f11 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f11.setPageContext(_jspx_page_context);
-    _jspx_th_bean_005fwrite_005f11.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f5);
-    // /jsp/prevent/PRV001.jsp(203,15) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f11.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f6);
+    // /jsp/prevent/PRV001.jsp(221,15) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f11.setName("item");
-    // /jsp/prevent/PRV001.jsp(203,15) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f11.setProperty("infoDisp");
-    // /jsp/prevent/PRV001.jsp(203,15) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(221,15) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f11.setProperty("lucenePropertyInfoDisp");
+    // /jsp/prevent/PRV001.jsp(221,15) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f11.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f11 = _jspx_th_bean_005fwrite_005f11.doStartTag();
     if (_jspx_th_bean_005fwrite_005f11.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -4444,19 +4420,19 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     return false;
   }
 
-  private boolean _jspx_meth_bean_005fwrite_005f12(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fequal_005f6, PageContext _jspx_page_context)
+  private boolean _jspx_meth_bean_005fwrite_005f12(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fiterate_005f1, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  bean:write
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f12 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f12.setPageContext(_jspx_page_context);
-    _jspx_th_bean_005fwrite_005f12.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f6);
-    // /jsp/prevent/PRV001.jsp(221,15) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f12.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f1);
+    // /jsp/prevent/PRV001.jsp(227,10) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f12.setName("item");
-    // /jsp/prevent/PRV001.jsp(221,15) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f12.setProperty("lucenePropertyInfoDisp");
-    // /jsp/prevent/PRV001.jsp(221,15) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(227,10) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f12.setProperty("preventPersonInfoDisp");
+    // /jsp/prevent/PRV001.jsp(227,10) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f12.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f12 = _jspx_th_bean_005fwrite_005f12.doStartTag();
     if (_jspx_th_bean_005fwrite_005f12.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -4472,44 +4448,21 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  bean:write
-    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f13 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
+    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f13 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f13.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f13.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f1);
-    // /jsp/prevent/PRV001.jsp(227,10) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(229,38) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f13.setName("item");
-    // /jsp/prevent/PRV001.jsp(227,10) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f13.setProperty("preventPersonInfoDisp");
-    // /jsp/prevent/PRV001.jsp(227,10) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f13.setFilter(false);
+    // /jsp/prevent/PRV001.jsp(229,38) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f13.setProperty("preventDocReceiveDate");
+    // /jsp/prevent/PRV001.jsp(229,38) name = format type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f13.setFormat("dd/MM/yyyy");
     int _jspx_eval_bean_005fwrite_005f13 = _jspx_th_bean_005fwrite_005f13.doStartTag();
     if (_jspx_th_bean_005fwrite_005f13.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.reuse(_jspx_th_bean_005fwrite_005f13);
+      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.reuse(_jspx_th_bean_005fwrite_005f13);
       return true;
     }
-    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.reuse(_jspx_th_bean_005fwrite_005f13);
-    return false;
-  }
-
-  private boolean _jspx_meth_bean_005fwrite_005f14(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fiterate_005f1, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  bean:write
-    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f14 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
-    _jspx_th_bean_005fwrite_005f14.setPageContext(_jspx_page_context);
-    _jspx_th_bean_005fwrite_005f14.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f1);
-    // /jsp/prevent/PRV001.jsp(229,38) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f14.setName("item");
-    // /jsp/prevent/PRV001.jsp(229,38) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f14.setProperty("preventDocReceiveDate");
-    // /jsp/prevent/PRV001.jsp(229,38) name = format type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f14.setFormat("dd/MM/yyyy");
-    int _jspx_eval_bean_005fwrite_005f14 = _jspx_th_bean_005fwrite_005f14.doStartTag();
-    if (_jspx_th_bean_005fwrite_005f14.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.reuse(_jspx_th_bean_005fwrite_005f14);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.reuse(_jspx_th_bean_005fwrite_005f14);
+    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.reuse(_jspx_th_bean_005fwrite_005f13);
     return false;
   }
 
@@ -4615,24 +4568,24 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     return false;
   }
 
-  private boolean _jspx_meth_bean_005fwrite_005f15(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fiterate_005f1, PageContext _jspx_page_context)
+  private boolean _jspx_meth_bean_005fwrite_005f14(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fiterate_005f1, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  bean:write
-    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f15 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
-    _jspx_th_bean_005fwrite_005f15.setPageContext(_jspx_page_context);
-    _jspx_th_bean_005fwrite_005f15.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f1);
+    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f14 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
+    _jspx_th_bean_005fwrite_005f14.setPageContext(_jspx_page_context);
+    _jspx_th_bean_005fwrite_005f14.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f1);
     // /jsp/prevent/PRV001.jsp(244,8) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f15.setName("item");
+    _jspx_th_bean_005fwrite_005f14.setName("item");
     // /jsp/prevent/PRV001.jsp(244,8) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f15.setProperty("entryUserName");
-    int _jspx_eval_bean_005fwrite_005f15 = _jspx_th_bean_005fwrite_005f15.doStartTag();
-    if (_jspx_th_bean_005fwrite_005f15.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f15);
+    _jspx_th_bean_005fwrite_005f14.setProperty("entryUserName");
+    int _jspx_eval_bean_005fwrite_005f14 = _jspx_th_bean_005fwrite_005f14.doStartTag();
+    if (_jspx_th_bean_005fwrite_005f14.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f14);
       return true;
     }
-    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f15);
+    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f14);
     return false;
   }
 
@@ -4656,7 +4609,7 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
         out.write("\r\n");
         out.write("\t\t\t<div id=\"preventListPager\" class=\"pager\">\r\n");
         out.write("\t\t\t<div class=\"pager-total\">Tổng số <strong>");
-        if (_jspx_meth_bean_005fwrite_005f16(_jspx_th_logic_005fgreaterThan_005f2, _jspx_page_context))
+        if (_jspx_meth_bean_005fwrite_005f15(_jspx_th_logic_005fgreaterThan_005f2, _jspx_page_context))
           return true;
         out.write("</strong> dữ liệu</div>\r\n");
         out.write("\t\t\t<div>");
@@ -4668,7 +4621,7 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
         out.write(' ');
         out.write(' ');
         out.write('/');
-        if (_jspx_meth_bean_005fwrite_005f17(_jspx_th_logic_005fgreaterThan_005f2, _jspx_page_context))
+        if (_jspx_meth_bean_005fwrite_005f16(_jspx_th_logic_005fgreaterThan_005f2, _jspx_page_context))
           return true;
         out.write(" </span> ");
         if (_jspx_meth_logic_005fgreaterThan_005f4(_jspx_th_logic_005fgreaterThan_005f2, _jspx_page_context))
@@ -4689,24 +4642,24 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     return false;
   }
 
-  private boolean _jspx_meth_bean_005fwrite_005f16(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fgreaterThan_005f2, PageContext _jspx_page_context)
+  private boolean _jspx_meth_bean_005fwrite_005f15(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fgreaterThan_005f2, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  bean:write
-    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f16 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
-    _jspx_th_bean_005fwrite_005f16.setPageContext(_jspx_page_context);
-    _jspx_th_bean_005fwrite_005f16.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f2);
+    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f15 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
+    _jspx_th_bean_005fwrite_005f15.setPageContext(_jspx_page_context);
+    _jspx_th_bean_005fwrite_005f15.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f2);
     // /jsp/prevent/PRV001.jsp(255,44) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f16.setName("preventListViewHelper");
+    _jspx_th_bean_005fwrite_005f15.setName("preventListViewHelper");
     // /jsp/prevent/PRV001.jsp(255,44) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f16.setProperty("totalCount");
-    int _jspx_eval_bean_005fwrite_005f16 = _jspx_th_bean_005fwrite_005f16.doStartTag();
-    if (_jspx_th_bean_005fwrite_005f16.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f16);
+    _jspx_th_bean_005fwrite_005f15.setProperty("totalCount");
+    int _jspx_eval_bean_005fwrite_005f15 = _jspx_th_bean_005fwrite_005f15.doStartTag();
+    if (_jspx_th_bean_005fwrite_005f15.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f15);
       return true;
     }
-    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f16);
+    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.reuse(_jspx_th_bean_005fwrite_005f15);
     return false;
   }
 
@@ -4857,26 +4810,26 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     return false;
   }
 
-  private boolean _jspx_meth_bean_005fwrite_005f17(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fgreaterThan_005f2, PageContext _jspx_page_context)
+  private boolean _jspx_meth_bean_005fwrite_005f16(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fgreaterThan_005f2, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  bean:write
-    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f17 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
-    _jspx_th_bean_005fwrite_005f17.setPageContext(_jspx_page_context);
-    _jspx_th_bean_005fwrite_005f17.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f2);
+    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f16 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
+    _jspx_th_bean_005fwrite_005f16.setPageContext(_jspx_page_context);
+    _jspx_th_bean_005fwrite_005f16.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f2);
     // /jsp/prevent/PRV001.jsp(266,167) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f17.setName("preventListViewHelper");
+    _jspx_th_bean_005fwrite_005f16.setName("preventListViewHelper");
     // /jsp/prevent/PRV001.jsp(266,167) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f17.setProperty("totalPage");
+    _jspx_th_bean_005fwrite_005f16.setProperty("totalPage");
     // /jsp/prevent/PRV001.jsp(266,167) name = format type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f17.setFormat("##########");
-    int _jspx_eval_bean_005fwrite_005f17 = _jspx_th_bean_005fwrite_005f17.doStartTag();
-    if (_jspx_th_bean_005fwrite_005f17.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.reuse(_jspx_th_bean_005fwrite_005f17);
+    _jspx_th_bean_005fwrite_005f16.setFormat("##########");
+    int _jspx_eval_bean_005fwrite_005f16 = _jspx_th_bean_005fwrite_005f16.doStartTag();
+    if (_jspx_th_bean_005fwrite_005f16.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.reuse(_jspx_th_bean_005fwrite_005f16);
       return true;
     }
-    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.reuse(_jspx_th_bean_005fwrite_005f17);
+    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.reuse(_jspx_th_bean_005fwrite_005f16);
     return false;
   }
 
@@ -5055,6 +5008,29 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     return false;
   }
 
+  private boolean _jspx_meth_bean_005fwrite_005f17(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fiterate_005f2, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  bean:write
+    org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f17 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
+    _jspx_th_bean_005fwrite_005f17.setPageContext(_jspx_page_context);
+    _jspx_th_bean_005fwrite_005f17.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
+    // /jsp/prevent/PRV001.jsp(311,54) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f17.setName("item");
+    // /jsp/prevent/PRV001.jsp(311,54) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f17.setProperty("notaryDate");
+    // /jsp/prevent/PRV001.jsp(311,54) name = format type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f17.setFormat("dd/MM/yyyy");
+    int _jspx_eval_bean_005fwrite_005f17 = _jspx_th_bean_005fwrite_005f17.doStartTag();
+    if (_jspx_th_bean_005fwrite_005f17.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.reuse(_jspx_th_bean_005fwrite_005f17);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.reuse(_jspx_th_bean_005fwrite_005f17);
+    return false;
+  }
+
   private boolean _jspx_meth_bean_005fwrite_005f18(javax.servlet.jsp.tagext.JspTag _jspx_th_logic_005fiterate_005f2, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
@@ -5063,11 +5039,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f18 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f18.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f18.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-    // /jsp/prevent/PRV001.jsp(310,54) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(314,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f18.setName("item");
-    // /jsp/prevent/PRV001.jsp(310,54) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_bean_005fwrite_005f18.setProperty("notaryDate");
-    // /jsp/prevent/PRV001.jsp(310,54) name = format type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(314,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_bean_005fwrite_005f18.setProperty("entryDateTime");
+    // /jsp/prevent/PRV001.jsp(314,7) name = format type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f18.setFormat("dd/MM/yyyy");
     int _jspx_eval_bean_005fwrite_005f18 = _jspx_th_bean_005fwrite_005f18.doStartTag();
     if (_jspx_th_bean_005fwrite_005f18.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5086,9 +5062,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f19 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f19.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f19.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-    // /jsp/prevent/PRV001.jsp(312,10) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(316,10) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f19.setName("item");
-    // /jsp/prevent/PRV001.jsp(312,10) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(316,10) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f19.setProperty("contractNumber");
     int _jspx_eval_bean_005fwrite_005f19 = _jspx_th_bean_005fwrite_005f19.doStartTag();
     if (_jspx_th_bean_005fwrite_005f19.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5107,9 +5083,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f20 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f20.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f20.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-    // /jsp/prevent/PRV001.jsp(313,10) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(317,10) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f20.setName("item");
-    // /jsp/prevent/PRV001.jsp(313,10) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(317,10) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f20.setProperty("contractName");
     int _jspx_eval_bean_005fwrite_005f20 = _jspx_th_bean_005fwrite_005f20.doStartTag();
     if (_jspx_th_bean_005fwrite_005f20.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5128,11 +5104,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f21 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f21.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f21.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f8);
-    // /jsp/prevent/PRV001.jsp(329,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(333,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f21.setName("item");
-    // /jsp/prevent/PRV001.jsp(329,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(333,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f21.setProperty("relationObjectSummaryDisp");
-    // /jsp/prevent/PRV001.jsp(329,7) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(333,7) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f21.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f21 = _jspx_th_bean_005fwrite_005f21.doStartTag();
     if (_jspx_th_bean_005fwrite_005f21.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5151,11 +5127,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f22 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f22.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f22.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f9);
-    // /jsp/prevent/PRV001.jsp(354,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(358,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f22.setName("item");
-    // /jsp/prevent/PRV001.jsp(354,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(358,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f22.setProperty("luceneRelationObjectDisp");
-    // /jsp/prevent/PRV001.jsp(354,7) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(358,7) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f22.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f22 = _jspx_th_bean_005fwrite_005f22.doStartTag();
     if (_jspx_th_bean_005fwrite_005f22.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5174,11 +5150,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f23 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f23.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f23.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f10);
-    // /jsp/prevent/PRV001.jsp(383,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(387,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f23.setName("item");
-    // /jsp/prevent/PRV001.jsp(383,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(387,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f23.setProperty("transactionContentSummaryDisp");
-    // /jsp/prevent/PRV001.jsp(383,7) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(387,7) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f23.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f23 = _jspx_th_bean_005fwrite_005f23.doStartTag();
     if (_jspx_th_bean_005fwrite_005f23.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5197,11 +5173,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f24 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f24.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f24.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f11);
-    // /jsp/prevent/PRV001.jsp(413,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(417,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f24.setName("item");
-    // /jsp/prevent/PRV001.jsp(413,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(417,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f24.setProperty("luceneTransactionContentDisp");
-    // /jsp/prevent/PRV001.jsp(413,7) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(417,7) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f24.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f24 = _jspx_th_bean_005fwrite_005f24.doStartTag();
     if (_jspx_th_bean_005fwrite_005f24.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5220,9 +5196,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.logic.NotEmptyTag _jspx_th_logic_005fnotEmpty_005f2 = (org.apache.struts.taglib.logic.NotEmptyTag) _005fjspx_005ftagPool_005flogic_005fnotEmpty_0026_005fproperty_005fname.get(org.apache.struts.taglib.logic.NotEmptyTag.class);
     _jspx_th_logic_005fnotEmpty_005f2.setPageContext(_jspx_page_context);
     _jspx_th_logic_005fnotEmpty_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-    // /jsp/prevent/PRV001.jsp(427,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(431,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fnotEmpty_005f2.setName("item");
-    // /jsp/prevent/PRV001.jsp(427,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(431,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fnotEmpty_005f2.setProperty("contractPeriod");
     int _jspx_eval_logic_005fnotEmpty_005f2 = _jspx_th_logic_005fnotEmpty_005f2.doStartTag();
     if (_jspx_eval_logic_005fnotEmpty_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -5257,9 +5233,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f25 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f25.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f25.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fnotEmpty_005f2);
-    // /jsp/prevent/PRV001.jsp(430,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(434,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f25.setName("item");
-    // /jsp/prevent/PRV001.jsp(430,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(434,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f25.setProperty("contractPeriod");
     int _jspx_eval_bean_005fwrite_005f25 = _jspx_th_bean_005fwrite_005f25.doStartTag();
     if (_jspx_th_bean_005fwrite_005f25.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5278,9 +5254,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.logic.NotEmptyTag _jspx_th_logic_005fnotEmpty_005f3 = (org.apache.struts.taglib.logic.NotEmptyTag) _005fjspx_005ftagPool_005flogic_005fnotEmpty_0026_005fproperty_005fname.get(org.apache.struts.taglib.logic.NotEmptyTag.class);
     _jspx_th_logic_005fnotEmpty_005f3.setPageContext(_jspx_page_context);
     _jspx_th_logic_005fnotEmpty_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-    // /jsp/prevent/PRV001.jsp(433,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(437,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fnotEmpty_005f3.setName("item");
-    // /jsp/prevent/PRV001.jsp(433,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(437,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fnotEmpty_005f3.setProperty("cancelDescription");
     int _jspx_eval_logic_005fnotEmpty_005f3 = _jspx_th_logic_005fnotEmpty_005f3.doStartTag();
     if (_jspx_eval_logic_005fnotEmpty_005f3 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -5309,9 +5285,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.logic.EmptyTag _jspx_th_logic_005fempty_005f0 = (org.apache.struts.taglib.logic.EmptyTag) _005fjspx_005ftagPool_005flogic_005fempty_0026_005fproperty_005fname.get(org.apache.struts.taglib.logic.EmptyTag.class);
     _jspx_th_logic_005fempty_005f0.setPageContext(_jspx_page_context);
     _jspx_th_logic_005fempty_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-    // /jsp/prevent/PRV001.jsp(436,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(440,6) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fempty_005f0.setName("item");
-    // /jsp/prevent/PRV001.jsp(436,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(440,6) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fempty_005f0.setProperty("cancelDescription");
     int _jspx_eval_logic_005fempty_005f0 = _jspx_th_logic_005fempty_005f0.doStartTag();
     if (_jspx_eval_logic_005fempty_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -5343,11 +5319,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.logic.EqualTag _jspx_th_logic_005fequal_005f12 = (org.apache.struts.taglib.logic.EqualTag) _005fjspx_005ftagPool_005flogic_005fequal_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.EqualTag.class);
     _jspx_th_logic_005fequal_005f12.setPageContext(_jspx_page_context);
     _jspx_th_logic_005fequal_005f12.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fempty_005f0);
-    // /jsp/prevent/PRV001.jsp(437,8) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(441,8) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fequal_005f12.setValue("true");
-    // /jsp/prevent/PRV001.jsp(437,8) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(441,8) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fequal_005f12.setName("item");
-    // /jsp/prevent/PRV001.jsp(437,8) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(441,8) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fequal_005f12.setProperty("mortageCancelFlag");
     int _jspx_eval_logic_005fequal_005f12 = _jspx_th_logic_005fequal_005f12.doStartTag();
     if (_jspx_eval_logic_005fequal_005f12 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -5376,11 +5352,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.logic.EqualTag _jspx_th_logic_005fequal_005f13 = (org.apache.struts.taglib.logic.EqualTag) _005fjspx_005ftagPool_005flogic_005fequal_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.EqualTag.class);
     _jspx_th_logic_005fequal_005f13.setPageContext(_jspx_page_context);
     _jspx_th_logic_005fequal_005f13.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-    // /jsp/prevent/PRV001.jsp(444,10) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(448,10) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fequal_005f13.setValue("true");
-    // /jsp/prevent/PRV001.jsp(444,10) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(448,10) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fequal_005f13.setName("item");
-    // /jsp/prevent/PRV001.jsp(444,10) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(448,10) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fequal_005f13.setProperty("mortageCancelFlag");
     int _jspx_eval_logic_005fequal_005f13 = _jspx_th_logic_005fequal_005f13.doStartTag();
     if (_jspx_eval_logic_005fequal_005f13 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -5418,9 +5394,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f26 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f26.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f26.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f13);
-    // /jsp/prevent/PRV001.jsp(446,16) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(450,16) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f26.setName("item");
-    // /jsp/prevent/PRV001.jsp(446,16) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(450,16) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f26.setProperty("mortageCancelNoteDisp");
     int _jspx_eval_bean_005fwrite_005f26 = _jspx_th_bean_005fwrite_005f26.doStartTag();
     if (_jspx_th_bean_005fwrite_005f26.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5439,9 +5415,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f27 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f27.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f27.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f13);
-    // /jsp/prevent/PRV001.jsp(447,16) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(451,16) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f27.setName("item");
-    // /jsp/prevent/PRV001.jsp(447,16) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(451,16) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f27.setProperty("mortageCancelDate");
     int _jspx_eval_bean_005fwrite_005f27 = _jspx_th_bean_005fwrite_005f27.doStartTag();
     if (_jspx_th_bean_005fwrite_005f27.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5460,11 +5436,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.logic.EqualTag _jspx_th_logic_005fequal_005f14 = (org.apache.struts.taglib.logic.EqualTag) _005fjspx_005ftagPool_005flogic_005fequal_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.EqualTag.class);
     _jspx_th_logic_005fequal_005f14.setPageContext(_jspx_page_context);
     _jspx_th_logic_005fequal_005f14.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-    // /jsp/prevent/PRV001.jsp(452,7) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(456,7) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fequal_005f14.setValue("true");
-    // /jsp/prevent/PRV001.jsp(452,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(456,7) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fequal_005f14.setName("item");
-    // /jsp/prevent/PRV001.jsp(452,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(456,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fequal_005f14.setProperty("mortageCancelFlag");
     int _jspx_eval_logic_005fequal_005f14 = _jspx_th_logic_005fequal_005f14.doStartTag();
     if (_jspx_eval_logic_005fequal_005f14 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -5502,9 +5478,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f28 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f28.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f28.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f14);
-    // /jsp/prevent/PRV001.jsp(453,8) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(457,8) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f28.setName("item");
-    // /jsp/prevent/PRV001.jsp(453,8) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(457,8) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f28.setProperty("mortageCancelDateDisp");
     int _jspx_eval_bean_005fwrite_005f28 = _jspx_th_bean_005fwrite_005f28.doStartTag();
     if (_jspx_th_bean_005fwrite_005f28.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5523,11 +5499,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f29 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f29.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f29.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f14);
-    // /jsp/prevent/PRV001.jsp(455,8) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(459,8) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f29.setName("item");
-    // /jsp/prevent/PRV001.jsp(455,8) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(459,8) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f29.setProperty("mortageCancelNoteDisp");
-    // /jsp/prevent/PRV001.jsp(455,8) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(459,8) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f29.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f29 = _jspx_th_bean_005fwrite_005f29.doStartTag();
     if (_jspx_th_bean_005fwrite_005f29.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5546,9 +5522,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f30 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f30.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f30.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-    // /jsp/prevent/PRV001.jsp(459,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(463,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f30.setName("item");
-    // /jsp/prevent/PRV001.jsp(459,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(463,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f30.setProperty("cancelDescription");
     int _jspx_eval_bean_005fwrite_005f30 = _jspx_th_bean_005fwrite_005f30.doStartTag();
     if (_jspx_th_bean_005fwrite_005f30.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5567,9 +5543,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f31 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f31.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f31.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-    // /jsp/prevent/PRV001.jsp(463,10) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(467,10) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f31.setName("item");
-    // /jsp/prevent/PRV001.jsp(463,10) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(467,10) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f31.setProperty("notaryPerson");
     int _jspx_eval_bean_005fwrite_005f31 = _jspx_th_bean_005fwrite_005f31.doStartTag();
     if (_jspx_th_bean_005fwrite_005f31.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5588,9 +5564,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.logic.EmptyTag _jspx_th_logic_005fempty_005f1 = (org.apache.struts.taglib.logic.EmptyTag) _005fjspx_005ftagPool_005flogic_005fempty_0026_005fproperty_005fname.get(org.apache.struts.taglib.logic.EmptyTag.class);
     _jspx_th_logic_005fempty_005f1.setPageContext(_jspx_page_context);
     _jspx_th_logic_005fempty_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-    // /jsp/prevent/PRV001.jsp(464,38) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(468,38) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fempty_005f1.setName("item");
-    // /jsp/prevent/PRV001.jsp(464,38) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(468,38) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fempty_005f1.setProperty("contractId");
     int _jspx_eval_logic_005fempty_005f1 = _jspx_th_logic_005fempty_005f1.doStartTag();
     if (_jspx_eval_logic_005fempty_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -5622,9 +5598,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f32 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f32.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f32.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fempty_005f1);
-    // /jsp/prevent/PRV001.jsp(466,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(470,7) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f32.setName("item");
-    // /jsp/prevent/PRV001.jsp(466,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(470,7) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f32.setProperty("notaryOfficeName");
     int _jspx_eval_bean_005fwrite_005f32 = _jspx_th_bean_005fwrite_005f32.doStartTag();
     if (_jspx_th_bean_005fwrite_005f32.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5643,9 +5619,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.logic.NotEmptyTag _jspx_th_logic_005fnotEmpty_005f4 = (org.apache.struts.taglib.logic.NotEmptyTag) _005fjspx_005ftagPool_005flogic_005fnotEmpty_0026_005fproperty_005fname.get(org.apache.struts.taglib.logic.NotEmptyTag.class);
     _jspx_th_logic_005fnotEmpty_005f4.setPageContext(_jspx_page_context);
     _jspx_th_logic_005fnotEmpty_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f2);
-    // /jsp/prevent/PRV001.jsp(467,21) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(471,21) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fnotEmpty_005f4.setName("item");
-    // /jsp/prevent/PRV001.jsp(467,21) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(471,21) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fnotEmpty_005f4.setProperty("contractId");
     int _jspx_eval_logic_005fnotEmpty_005f4 = _jspx_th_logic_005fnotEmpty_005f4.doStartTag();
     if (_jspx_eval_logic_005fnotEmpty_005f4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -5677,13 +5653,13 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.html.LinkTag _jspx_th_html_005flink_005f23 = (org.apache.struts.taglib.html.LinkTag) _005fjspx_005ftagPool_005fhtml_005flink_0026_005fparamProperty_005fparamName_005fparamId_005faction.get(org.apache.struts.taglib.html.LinkTag.class);
     _jspx_th_html_005flink_005f23.setPageContext(_jspx_page_context);
     _jspx_th_html_005flink_005f23.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fnotEmpty_005f4);
-    // /jsp/prevent/PRV001.jsp(468,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(472,7) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005flink_005f23.setAction("/contractdetailview.do");
-    // /jsp/prevent/PRV001.jsp(468,7) name = paramId type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(472,7) name = paramId type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005flink_005f23.setParamId("cid");
-    // /jsp/prevent/PRV001.jsp(468,7) name = paramName type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(472,7) name = paramName type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005flink_005f23.setParamName("item");
-    // /jsp/prevent/PRV001.jsp(468,7) name = paramProperty type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(472,7) name = paramProperty type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005flink_005f23.setParamProperty("contractId");
     int _jspx_eval_html_005flink_005f23 = _jspx_th_html_005flink_005f23.doStartTag();
     if (_jspx_eval_html_005flink_005f23 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -5720,11 +5696,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.logic.GreaterThanTag _jspx_th_logic_005fgreaterThan_005f5 = (org.apache.struts.taglib.logic.GreaterThanTag) _005fjspx_005ftagPool_005flogic_005fgreaterThan_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.GreaterThanTag.class);
     _jspx_th_logic_005fgreaterThan_005f5.setPageContext(_jspx_page_context);
     _jspx_th_logic_005fgreaterThan_005f5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fnotEmpty_005f1);
-    // /jsp/prevent/PRV001.jsp(478,2) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(482,2) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fgreaterThan_005f5.setName("preventListViewHelper");
-    // /jsp/prevent/PRV001.jsp(478,2) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(482,2) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fgreaterThan_005f5.setProperty("totalCountProperty");
-    // /jsp/prevent/PRV001.jsp(478,2) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(482,2) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fgreaterThan_005f5.setValue("0");
     int _jspx_eval_logic_005fgreaterThan_005f5 = _jspx_th_logic_005fgreaterThan_005f5.doStartTag();
     if (_jspx_eval_logic_005fgreaterThan_005f5 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -5773,9 +5749,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f33 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f33.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f33.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f5);
-    // /jsp/prevent/PRV001.jsp(481,44) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(485,44) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f33.setName("preventListViewHelper");
-    // /jsp/prevent/PRV001.jsp(481,44) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(485,44) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f33.setProperty("totalCountProperty");
     int _jspx_eval_bean_005fwrite_005f33 = _jspx_th_bean_005fwrite_005f33.doStartTag();
     if (_jspx_th_bean_005fwrite_005f33.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5794,11 +5770,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.logic.GreaterThanTag _jspx_th_logic_005fgreaterThan_005f6 = (org.apache.struts.taglib.logic.GreaterThanTag) _005fjspx_005ftagPool_005flogic_005fgreaterThan_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.GreaterThanTag.class);
     _jspx_th_logic_005fgreaterThan_005f6.setPageContext(_jspx_page_context);
     _jspx_th_logic_005fgreaterThan_005f6.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f5);
-    // /jsp/prevent/PRV001.jsp(484,8) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(488,8) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fgreaterThan_005f6.setName("preventListViewHelper");
-    // /jsp/prevent/PRV001.jsp(484,8) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(488,8) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fgreaterThan_005f6.setProperty("totalPageProperty");
-    // /jsp/prevent/PRV001.jsp(484,8) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(488,8) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fgreaterThan_005f6.setValue("1");
     int _jspx_eval_logic_005fgreaterThan_005f6 = _jspx_th_logic_005fgreaterThan_005f6.doStartTag();
     if (_jspx_eval_logic_005fgreaterThan_005f6 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -5834,7 +5810,7 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.html.LinkTag _jspx_th_html_005flink_005f24 = (org.apache.struts.taglib.html.LinkTag) _005fjspx_005ftagPool_005fhtml_005flink_0026_005fhref.get(org.apache.struts.taglib.html.LinkTag.class);
     _jspx_th_html_005flink_005f24.setPageContext(_jspx_page_context);
     _jspx_th_html_005flink_005f24.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f6);
-    // /jsp/prevent/PRV001.jsp(486,4) name = href type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(490,4) name = href type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005flink_005f24.setHref("javascript:directionProperty('first')");
     int _jspx_eval_html_005flink_005f24 = _jspx_th_html_005flink_005f24.doStartTag();
     if (_jspx_eval_html_005flink_005f24 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -5871,7 +5847,7 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.html.LinkTag _jspx_th_html_005flink_005f25 = (org.apache.struts.taglib.html.LinkTag) _005fjspx_005ftagPool_005fhtml_005flink_0026_005fhref.get(org.apache.struts.taglib.html.LinkTag.class);
     _jspx_th_html_005flink_005f25.setPageContext(_jspx_page_context);
     _jspx_th_html_005flink_005f25.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f6);
-    // /jsp/prevent/PRV001.jsp(489,4) name = href type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(493,4) name = href type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005flink_005f25.setHref("javascript:directionProperty('ahead')");
     int _jspx_eval_html_005flink_005f25 = _jspx_th_html_005flink_005f25.doStartTag();
     if (_jspx_eval_html_005flink_005f25 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -5908,21 +5884,21 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.html.TextTag _jspx_th_html_005ftext_005f4 = (org.apache.struts.taglib.html.TextTag) _005fjspx_005ftagPool_005fhtml_005ftext_0026_005fstyleId_005fstyle_005fproperty_005fonfocus_005fonchange_005fonblur_005fname_005fmaxlength_005fnobody.get(org.apache.struts.taglib.html.TextTag.class);
     _jspx_th_html_005ftext_005f4.setPageContext(_jspx_page_context);
     _jspx_th_html_005ftext_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f5);
-    // /jsp/prevent/PRV001.jsp(492,43) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(496,43) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005ftext_005f4.setName("preventListViewHelper");
-    // /jsp/prevent/PRV001.jsp(492,43) name = styleId type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(496,43) name = styleId type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005ftext_005f4.setStyleId("pagePropertyNum");
-    // /jsp/prevent/PRV001.jsp(492,43) name = property type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(496,43) name = property type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005ftext_005f4.setProperty("pageProperty");
-    // /jsp/prevent/PRV001.jsp(492,43) name = maxlength type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(496,43) name = maxlength type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005ftext_005f4.setMaxlength("9");
-    // /jsp/prevent/PRV001.jsp(492,43) name = style type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(496,43) name = style type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005ftext_005f4.setStyle("width:60px");
-    // /jsp/prevent/PRV001.jsp(492,43) name = onblur type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(496,43) name = onblur type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005ftext_005f4.setOnblur("checkPaging=0;");
-    // /jsp/prevent/PRV001.jsp(492,43) name = onfocus type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(496,43) name = onfocus type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005ftext_005f4.setOnfocus("checkPaging=2;");
-    // /jsp/prevent/PRV001.jsp(492,43) name = onchange type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(496,43) name = onchange type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005ftext_005f4.setOnchange("javascript: pagingProperty(this.value)");
     int _jspx_eval_html_005ftext_005f4 = _jspx_th_html_005ftext_005f4.doStartTag();
     if (_jspx_th_html_005ftext_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5941,11 +5917,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f34 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fformat_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f34.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f34.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f5);
-    // /jsp/prevent/PRV001.jsp(493,164) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(497,164) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f34.setName("preventListViewHelper");
-    // /jsp/prevent/PRV001.jsp(493,164) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(497,164) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f34.setProperty("totalPageProperty");
-    // /jsp/prevent/PRV001.jsp(493,164) name = format type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(497,164) name = format type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f34.setFormat("##########");
     int _jspx_eval_bean_005fwrite_005f34 = _jspx_th_bean_005fwrite_005f34.doStartTag();
     if (_jspx_th_bean_005fwrite_005f34.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -5964,11 +5940,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.logic.GreaterThanTag _jspx_th_logic_005fgreaterThan_005f7 = (org.apache.struts.taglib.logic.GreaterThanTag) _005fjspx_005ftagPool_005flogic_005fgreaterThan_0026_005fvalue_005fproperty_005fname.get(org.apache.struts.taglib.logic.GreaterThanTag.class);
     _jspx_th_logic_005fgreaterThan_005f7.setPageContext(_jspx_page_context);
     _jspx_th_logic_005fgreaterThan_005f7.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f5);
-    // /jsp/prevent/PRV001.jsp(495,35) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(499,35) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fgreaterThan_005f7.setName("preventListViewHelper");
-    // /jsp/prevent/PRV001.jsp(495,35) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(499,35) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fgreaterThan_005f7.setProperty("totalPageProperty");
-    // /jsp/prevent/PRV001.jsp(495,35) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(499,35) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_logic_005fgreaterThan_005f7.setValue("1");
     int _jspx_eval_logic_005fgreaterThan_005f7 = _jspx_th_logic_005fgreaterThan_005f7.doStartTag();
     if (_jspx_eval_logic_005fgreaterThan_005f7 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -6004,7 +5980,7 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.html.LinkTag _jspx_th_html_005flink_005f26 = (org.apache.struts.taglib.html.LinkTag) _005fjspx_005ftagPool_005fhtml_005flink_0026_005fhref.get(org.apache.struts.taglib.html.LinkTag.class);
     _jspx_th_html_005flink_005f26.setPageContext(_jspx_page_context);
     _jspx_th_html_005flink_005f26.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f7);
-    // /jsp/prevent/PRV001.jsp(497,4) name = href type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(501,4) name = href type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005flink_005f26.setHref("javascript:directionProperty('next')");
     int _jspx_eval_html_005flink_005f26 = _jspx_th_html_005flink_005f26.doStartTag();
     if (_jspx_eval_html_005flink_005f26 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -6041,7 +6017,7 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.html.LinkTag _jspx_th_html_005flink_005f27 = (org.apache.struts.taglib.html.LinkTag) _005fjspx_005ftagPool_005fhtml_005flink_0026_005fhref.get(org.apache.struts.taglib.html.LinkTag.class);
     _jspx_th_html_005flink_005f27.setPageContext(_jspx_page_context);
     _jspx_th_html_005flink_005f27.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fgreaterThan_005f7);
-    // /jsp/prevent/PRV001.jsp(500,4) name = href type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(504,4) name = href type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005flink_005f27.setHref("javascript:directionProperty('end')");
     int _jspx_eval_html_005flink_005f27 = _jspx_th_html_005flink_005f27.doStartTag();
     if (_jspx_eval_html_005flink_005f27 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -6078,7 +6054,7 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.html.HiddenTag _jspx_th_html_005fhidden_005f4 = (org.apache.struts.taglib.html.HiddenTag) _005fjspx_005ftagPool_005fhtml_005fhidden_0026_005fproperty_005fnobody.get(org.apache.struts.taglib.html.HiddenTag.class);
     _jspx_th_html_005fhidden_005f4.setPageContext(_jspx_page_context);
     _jspx_th_html_005fhidden_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_html_005fform_005f0);
-    // /jsp/prevent/PRV001.jsp(508,1) name = property type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(512,1) name = property type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005fhidden_005f4.setProperty("direction");
     int _jspx_eval_html_005fhidden_005f4 = _jspx_th_html_005fhidden_005f4.doStartTag();
     if (_jspx_th_html_005fhidden_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -6097,11 +6073,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.html.HiddenTag _jspx_th_html_005fhidden_005f5 = (org.apache.struts.taglib.html.HiddenTag) _005fjspx_005ftagPool_005fhtml_005fhidden_0026_005fstyleId_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.html.HiddenTag.class);
     _jspx_th_html_005fhidden_005f5.setPageContext(_jspx_page_context);
     _jspx_th_html_005fhidden_005f5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_html_005fform_005f0);
-    // /jsp/prevent/PRV001.jsp(509,1) name = property type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(513,1) name = property type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005fhidden_005f5.setProperty("sortType");
-    // /jsp/prevent/PRV001.jsp(509,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(513,1) name = name type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005fhidden_005f5.setName("preventListViewHelper");
-    // /jsp/prevent/PRV001.jsp(509,1) name = styleId type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(513,1) name = styleId type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_html_005fhidden_005f5.setStyleId("sortType");
     int _jspx_eval_html_005fhidden_005f5 = _jspx_th_html_005fhidden_005f5.doStartTag();
     if (_jspx_th_html_005fhidden_005f5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -6200,11 +6176,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f35 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f35.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f35.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f16);
-    // /jsp/prevent/PRV001.jsp(803,50) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(807,50) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f35.setName("item");
-    // /jsp/prevent/PRV001.jsp(803,50) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(807,50) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f35.setProperty("info");
-    // /jsp/prevent/PRV001.jsp(803,50) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(807,50) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f35.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f35 = _jspx_th_bean_005fwrite_005f35.doStartTag();
     if (_jspx_th_bean_005fwrite_005f35.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -6223,11 +6199,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f36 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f36.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f36.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f17);
-    // /jsp/prevent/PRV001.jsp(806,50) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(810,50) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f36.setName("item");
-    // /jsp/prevent/PRV001.jsp(806,50) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(810,50) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f36.setProperty("lucenePropertyInfo");
-    // /jsp/prevent/PRV001.jsp(806,50) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(810,50) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f36.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f36 = _jspx_th_bean_005fwrite_005f36.doStartTag();
     if (_jspx_th_bean_005fwrite_005f36.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -6246,11 +6222,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f37 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f37.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f37.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f18);
-    // /jsp/prevent/PRV001.jsp(815,51) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(819,51) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f37.setName("item");
-    // /jsp/prevent/PRV001.jsp(815,51) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(819,51) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f37.setProperty("relationObjectDisp");
-    // /jsp/prevent/PRV001.jsp(815,51) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(819,51) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f37.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f37 = _jspx_th_bean_005fwrite_005f37.doStartTag();
     if (_jspx_th_bean_005fwrite_005f37.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -6269,11 +6245,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f38 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f38.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f38.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f18);
-    // /jsp/prevent/PRV001.jsp(816,51) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(820,51) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f38.setName("item");
-    // /jsp/prevent/PRV001.jsp(816,51) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(820,51) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f38.setProperty("transactionContentDisp");
-    // /jsp/prevent/PRV001.jsp(816,51) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(820,51) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f38.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f38 = _jspx_th_bean_005fwrite_005f38.doStartTag();
     if (_jspx_th_bean_005fwrite_005f38.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -6292,11 +6268,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f39 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f39.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f39.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f19);
-    // /jsp/prevent/PRV001.jsp(819,51) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(823,51) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f39.setName("item");
-    // /jsp/prevent/PRV001.jsp(819,51) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(823,51) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f39.setProperty("luceneRelationObject");
-    // /jsp/prevent/PRV001.jsp(819,51) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(823,51) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f39.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f39 = _jspx_th_bean_005fwrite_005f39.doStartTag();
     if (_jspx_th_bean_005fwrite_005f39.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -6315,11 +6291,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f40 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f40.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f40.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f19);
-    // /jsp/prevent/PRV001.jsp(821,51) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(825,51) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f40.setName("item");
-    // /jsp/prevent/PRV001.jsp(821,51) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(825,51) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f40.setProperty("luceneTransactionContent");
-    // /jsp/prevent/PRV001.jsp(821,51) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(825,51) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f40.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f40 = _jspx_th_bean_005fwrite_005f40.doStartTag();
     if (_jspx_th_bean_005fwrite_005f40.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -6338,11 +6314,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f41 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f41.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f41.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fnotEmpty_005f7);
-    // /jsp/prevent/PRV001.jsp(826,94) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(830,94) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f41.setName("item");
-    // /jsp/prevent/PRV001.jsp(826,94) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(830,94) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f41.setProperty("contractPeriod");
-    // /jsp/prevent/PRV001.jsp(826,94) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(830,94) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f41.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f41 = _jspx_th_bean_005fwrite_005f41.doStartTag();
     if (_jspx_th_bean_005fwrite_005f41.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -6361,11 +6337,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f42 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f42.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f42.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f21);
-    // /jsp/prevent/PRV001.jsp(838,78) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(842,78) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f42.setName("item");
-    // /jsp/prevent/PRV001.jsp(838,78) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(842,78) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f42.setProperty("mortageCancelDateDisp");
-    // /jsp/prevent/PRV001.jsp(838,78) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(842,78) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f42.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f42 = _jspx_th_bean_005fwrite_005f42.doStartTag();
     if (_jspx_th_bean_005fwrite_005f42.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -6384,11 +6360,11 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f43 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005ffilter_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f43.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f43.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fequal_005f21);
-    // /jsp/prevent/PRV001.jsp(839,78) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(843,78) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f43.setName("item");
-    // /jsp/prevent/PRV001.jsp(839,78) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(843,78) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f43.setProperty("mortageCancelNoteDisp");
-    // /jsp/prevent/PRV001.jsp(839,78) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(843,78) name = filter type = boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f43.setFilter(false);
     int _jspx_eval_bean_005fwrite_005f43 = _jspx_th_bean_005fwrite_005f43.doStartTag();
     if (_jspx_th_bean_005fwrite_005f43.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -6407,9 +6383,9 @@ if ("Phòng công chứng số 1".equalsIgnoreCase(officeName)) {
     org.apache.struts.taglib.bean.WriteTag _jspx_th_bean_005fwrite_005f44 = (org.apache.struts.taglib.bean.WriteTag) _005fjspx_005ftagPool_005fbean_005fwrite_0026_005fproperty_005fname_005fnobody.get(org.apache.struts.taglib.bean.WriteTag.class);
     _jspx_th_bean_005fwrite_005f44.setPageContext(_jspx_page_context);
     _jspx_th_bean_005fwrite_005f44.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_logic_005fiterate_005f4);
-    // /jsp/prevent/PRV001.jsp(842,77) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(846,77) name = name type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f44.setName("item");
-    // /jsp/prevent/PRV001.jsp(842,77) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /jsp/prevent/PRV001.jsp(846,77) name = property type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_bean_005fwrite_005f44.setProperty("cancelDescription");
     int _jspx_eval_bean_005fwrite_005f44 = _jspx_th_bean_005fwrite_005f44.doStartTag();
     if (_jspx_th_bean_005fwrite_005f44.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
