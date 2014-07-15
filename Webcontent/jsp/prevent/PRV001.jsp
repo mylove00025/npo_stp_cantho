@@ -295,6 +295,7 @@
 		<table id="propertyList" class="tbl-list">
 			<tr>
 				<th>Ngày CC,CT</th>
+				<th>Ngày đưa lên</th>
 				<th>Số hợp đồng</th>
 				<th>Tên hợp đồng</th>
 				<th>Bên liên quan</th>
@@ -309,6 +310,9 @@
 					<tr id="highlight" class="tbl-row<%=i % 2%>">
 						<td nowrap="nowrap" style="text-align: center;"><bean:write
 							name="item" property="notaryDate" format="dd/MM/yyyy" /></td>
+						<td nowrap="nowrap" style="text-align: center;">
+							<bean:write	name="item" property="entryDateTime" format="dd/MM/yyyy" />
+						</td>
 						<td><bean:write name="item" property="contractNumber" /></td>
 						<td><bean:write name="item" property="contractName" /></td>
 						<td> 
