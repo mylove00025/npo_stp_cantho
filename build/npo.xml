@@ -1,0 +1,22 @@
+<Context path="/stp" reloadable="true" docBase="D:\ForDEV\VPCC\Workspace2\npo_stp2\WebContent"
+workDir="D:\ForDEV\VPCC\Workspace2\npo_stp2\work" >
+<Resource auth="Container"
+        name="jdbc/datasource" 
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+        driverClassName="com.mysql.jdbc.Driver"
+        username="root" 
+        password="123456"
+        url="jdbc:mysql://localhost:3306/npo_stp3"
+        minIdle="10" 
+        maxWait="10000" 
+        maxActive="100"
+        initialSize="10"
+        jmxEnabled="true"
+        jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+        removeAbandoned="true" 
+        removeAbandonedTimeout="60"
+        validationQuery="/* ping */"
+        validationInterval="30000"
+        testWhileIdle="true"/>      
+</Context>
